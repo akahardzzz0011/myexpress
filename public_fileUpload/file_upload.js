@@ -4,10 +4,6 @@ var fs = require("fs");
 var bodyParser = require('body-parser');
 var multer = require('multer');
 
-app.get('/index.htm', function (req, res) {
-        res.sendFile(__dirname + "/" + "index.htm" );
-})
-
 app.use(express.static('public_fileUpload'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(multer({ dest: '/tmp/' }));
