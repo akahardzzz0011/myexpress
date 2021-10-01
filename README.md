@@ -7,6 +7,6 @@
 
 #server_static_files.js serves static files dierctly like images
 
-#get_method.js passes two values using html form GET method
+#inside "public_get" folder are the index.htm file and get_method.js passes two values using html form GET method
 
-#post_method.js passes two values using html form POST method
+#inside "public_post" folder are the index.htm file and post_method.js passes two values using html form POST method
