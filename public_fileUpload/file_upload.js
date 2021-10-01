@@ -10,7 +10,7 @@ app.get('/index.htm', function (req, res) {
 
 app.use(express.static('public_fileUpload'));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(multer({ dest: '/uploads' }));
+app.use(multer({ dest: '/tmp/' }));
 
 
 app.get('/index.htm', function (req, res) {
