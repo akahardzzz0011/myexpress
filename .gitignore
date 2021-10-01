@@ -1,3 +1,4 @@
+*.gitignore
 node_modules/
 kuvakansio/
 public_fileUpload_formidable/
