@@ -10,3 +10,7 @@
 #inside "public_get" folder are the index.htm file and get_method.js passes two values using html form GET method
 
 #inside "public_post" folder are the index.htm file and post_method.js passes two values using html form POST method
+
+#file upload enables to upload files to the server
+
+#cookie management prints client cookie data
