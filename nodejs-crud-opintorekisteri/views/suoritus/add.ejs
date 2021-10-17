@@ -1,10 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
+<style>
+body {
+  background-color: #8a93b8;
+}
+div {
+  margin-left: 100 px;
+  margin-right: 300 px;
+  background-color: #c5c4aa;
+}
+</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Add Opiskelija</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Add Suoritus</title>
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 </head>
 <body class="container" style="margin-top: 50px;">
 
@@ -14,10 +24,10 @@
 
     <div class="card"> 
 	<div class="card-header">
-			Add Opiskelija
+			Add Suoritus
 		</div>
         <div class="card-body">
-            <form action="/opiskelija/add" method="post">
+            <form action="/suoritus/add" method="post">
                 <div class="form-group">
                     <label>Etunimi:</label>
                     <input type="text" class="form-control" name="Etunimi" value="<%= Etunimi %>" autocomplete="off">
@@ -27,14 +37,17 @@
                     <input type="text" class="form-control" name="Sukunimi" value="<%= Sukunimi %>" autocomplete="off">
                 </div>
 		<div class="form-group">
-		    <label>Osoite:</label>
-		    <input type="text" class="form-control" name="Osoite" value="<%= Osoite %>" autocomplete="off">
+		    <label>Nimi:</label>
+		    <input type="text" class="form-control" name="Nimi" value="<%= Nimi %>" autocomplete="off">
 		</div>
 		<div class="form-group">
-		    <label>Luokkatunnus:</label>
-		    <input type="text" class="form-control" name="Luokkatunnus" value="<%= Luokkatunnus %>" autocomplete="off">
+		    <label>Arvosana:</label>
+		    <input type="number" class="form-control" name="Arvosana" value="<%= Arvosana %>" autocomplete="off">
 		</div>
-
+		<div class="form-group">
+		    <label>Koodi:</label>
+		    <input type="text" class="form-control" name="Koodi" value="<%= Koodi %>" autocomplete="off">
+		</div>
 		
                 <div class="form-group">
                     <input type="submit" class="btn btn-info" value="Add"/>
